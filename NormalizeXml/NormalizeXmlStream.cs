@@ -16,13 +16,18 @@ namespace BizTalkComponents.PipelineComponents.NormalizeXml
         
         public NormalizeXmlStream(XmlReader reader) : base(reader)
         {
-
+           
         }
 
         public NormalizeXmlStream(XmlReader reader, Encoding encoding) : base(reader, encoding)
         {
+           
         }
 
+        protected override void TranslateWhitespace(string space)
+        {
+            
+        }
         protected override void TranslateStartElement(string prefix, string localName, string nsURI)
         {
 
